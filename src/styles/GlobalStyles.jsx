@@ -33,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .gradient_text {
-    background: linear-gradient(90.88deg, rgba(90, 77, 143, 0.92) 25.42%, rgba(112, 182, 242, 0.82) 77.83%);
+    background-image: -webkit-linear-gradient(90.88deg, rgba(90, 77, 143, 0.92) 25.42%, rgba(112, 182, 242, 0.82) 77.83%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
