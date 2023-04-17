@@ -9,14 +9,23 @@ export const Header = styled.header`
 	align-items: center;
 	gap: 0.6rem;
 
-	background: rgba(74, 60, 118, 0.07);
+	background-color: rgba(74, 60, 118, 0.07);
 	backdrop-filter: blur(10px);
+
+	@media (max-width: 550px) {
+		justify-content: space-between;
+	}
 `;
 
 export const Menu = styled.nav`
 	width: 26%;
 
+	@media (max-width: 928px) {
+		width: 45%;
+	}
+
 	ul {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		gap: 0.8rem;
