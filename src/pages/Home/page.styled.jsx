@@ -7,12 +7,27 @@ export const Section = styled.section`
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+
+	@media (max-width: 1218px) {
+		justify-content: space-between;
+	}
+
+	@media (max-width: 1000px) {
+		justify-content: space-around;
+		flex-direction: column;
+		gap: 2rem;
+	}
 `;
 
 export const Content = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 0.6rem;
+
+	@media (max-width: 830px) {
+		align-items: center;
+		text-align: center;
+	}
 
 	.welcome {
 		font-weight: ${({ theme }) => theme.fonts.fw.md};
@@ -22,7 +37,7 @@ export const Content = styled.div`
 	h1 {
 		font-weight: ${({ theme }) => theme.fonts.fw.bd};
 		font-family: ${({ theme }) => theme.fonts.fm.fira_code};
-		font-size: min(4.5rem, 18vw);
+		font-size: min(4.5rem, 14vw);
 	}
 
 	.occupation {
@@ -46,16 +61,26 @@ export const GroupButtons = styled.div`
 `;
 
 export const Code = styled.div`
-	padding: 24px;
+	padding: 16px;
 	width: max-content;
 	background-color: #0f121b;
 	border: 3px solid #4a4f76;
 	border-radius: 23px;
 
+	@media (max-width: 510px) {
+		width: 100%;
+	}
+
 	pre,
 	span {
 		font-family: ${({ theme }) => theme.fonts.fm.fira_code};
 		font-weight: ${({ theme }) => theme.fonts.fw.rg};
+		font-size: min(0.9rem, 3vw);
+	}
+
+	pre {
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	.pink {

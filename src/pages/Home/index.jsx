@@ -38,26 +38,28 @@ export default function Home() {
 
 			<S.Code>
 				<pre>
-					<span className="line">1</span> <span className="pink">class</span>{" "}
+					<span className="line">1 </span>
+					<span className="pink">class </span>
 					<span className="blue">Person</span>
 					<span className="yellow">{" {"}</span>
 				</pre>
 				<pre>
-					<span className="line">2</span>
-					{"   "}
-					<span className="pink">constructor() {"{"}</span>
+					<span className="line">2 </span>
+					<span className="pink">
+						{"  "}constructor() {"{"}
+					</span>
 				</pre>
 				<pre>
-					<span className="line">3</span> {"     "}
-					<span className="purple">this</span>
+					<span className="line">3 </span>
+					<span className="purple">{"   "}this</span>
 					<span className="white">.name</span>
 					<span className="pink"> = </span>
 					<span className="yellow">{"'Cauã'"}</span>
 					<span className="white">;</span>
 				</pre>
 				<pre>
-					<span className="line">4</span> {"     "}
-					<span className="purple">this</span>
+					<span className="line">4 </span>
+					<span className="purple">{"   "}this</span>
 					<span className="white">.age</span>
 					<span className="pink"> = </span>
 					<span className="pink">new </span>
@@ -70,8 +72,8 @@ export default function Home() {
 					<span className="white">;</span>
 				</pre>
 				<pre>
-					<span className="line">5</span> {"     "}
-					<span className="purple">this</span>
+					<span className="line">5</span>
+					<span className="purple">{"   "} this</span>
 					<span className="white">.occupation</span>
 					<span className="pink"> = </span>
 					<span className="yellow">{"'Developer'"}</span>
@@ -79,7 +81,7 @@ export default function Home() {
 				</pre>
 				<pre>
 					<span className="line">6</span>
-					<span className="pink">{"   }"}</span>
+					<span className="pink">{"  }"}</span>
 				</pre>
 				<pre>
 					<span className="line">7</span>

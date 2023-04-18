@@ -26,7 +26,7 @@ export const StyledButton = styled.button`
 				case "invert":
 					return `
             background-color: ${color};
-	          color: ${theme.colors.light};
+            color: ${theme.colors.light};
             border-color: ${theme.colors.light};
           `;
 				default:
