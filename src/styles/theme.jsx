@@ -4,14 +4,14 @@ const colors = {
 		main: "#08070C",
 		primary: "#336DC3",
 		primary_dark: "#173259",
-		light: "#ffffff",
+		text: "#ffffff",
 	},
 	light: {
 		name: "light",
 		main: "#ffffff",
 		primary: "#336DC3",
 		primary_dark: "#173259",
-		light: "#000",
+		text: "#08070C",
 	},
 };
 

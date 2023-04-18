@@ -19,7 +19,11 @@ const GlobalStyles = createGlobalStyle`
   body,
   html {
     background-color: ${({ theme }) => theme.colors.main};
-    color: ${({ theme }) => theme.colors.light};
+    color: ${({ theme }) => theme.colors.text};
+  }
+
+  main {
+    width: 100%;
   }
   
   ul,
@@ -33,10 +37,15 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .gradient_text {
-    background-image: -webkit-linear-gradient(90.88deg, rgba(90, 77, 143, 0.92) 25.42%, rgba(112, 182, 242, 0.82) 77.83%);
+    background-image: ${({ theme }) =>
+			theme.colors.name === "dark"
+				? "-webkit-linear-gradient(45deg, rgba(90, 77, 143, 0.92) 22.31%, rgba(112, 182, 242, 0.82) 60.19%)"
+				: "-webkit-linear-gradient(45deg, #004B8D, #0068C4 30%)"};
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    background-size: 150%;
+    display: inline;
   }
 `;
 
