@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 
 import MenuMobile from "@components/MenuMobile";
-import { ChangeThemeButton } from "@components/Buttons";
+import { HandlerTheme } from "@components/HandlerTheme";
 import Logo from "@styled/components/Logo";
 
 import * as S from "./header.styled";
@@ -36,7 +36,7 @@ export default function Header() {
 				</S.Menu>
 
 				<S.Buttons>
-					<ChangeThemeButton />
+					<HandlerTheme />
 
 					<button type="button">
 						<BsSearch size={18} />

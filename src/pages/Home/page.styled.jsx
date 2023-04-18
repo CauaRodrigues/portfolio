@@ -38,10 +38,11 @@ export const Content = styled.div`
 
 export const GroupButtons = styled.div`
 	width: max-content;
+	margin-top: 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 1.5rem;
+	gap: 1.7rem;
 `;
 
 export const Code = styled.div`
@@ -77,5 +78,6 @@ export const Code = styled.div`
 	}
 	.line {
 		color: #4a4f76;
+		font-weight: ${({ theme }) => theme.fonts.fw.md};
 	}
 `;

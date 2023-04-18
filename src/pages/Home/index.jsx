@@ -1,7 +1,13 @@
 import React from "react";
+import { useTheme } from "styled-components";
+
 import * as S from "./page.styled";
+import { Link } from "react-router-dom";
+import { StyledButton } from "@styled/components/Button";
 
 export default function Home() {
+	const { colors } = useTheme();
+
 	return (
 		<S.Section>
 			<S.Content>
@@ -14,8 +20,19 @@ export default function Home() {
 				</p>
 
 				<S.GroupButtons>
-					<button>Baixar CV</button>
-					<button>Inciar</button>
+					<StyledButton bgColor={colors.primary} color={colors.light}>
+						<a
+							href="https://drive.google.com/file/d/1qEy4-NN13YhEoKtGoaGLZGQ35q1kH6A7/view?usp=sharing"
+							target="_blank"
+							referrerPolicy="no-referrer"
+						>
+							Download CV
+						</a>
+					</StyledButton>
+
+					<StyledButton color={colors.primary} borderSize={3} hover="invert">
+						<Link to="/about">Sobre Mim</Link>
+					</StyledButton>
 				</S.GroupButtons>
 			</S.Content>
 

@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
+import styled from "styled-components";
 import { BsSunFill } from "react-icons/bs";
 
 import { ThemeContext } from "@context/ThemeContext";
 import { colors } from "@styled/theme";
 
-import * as S from "./buttons.styled";
-
-export const ChangeThemeButton = () => {
+export const HandlerTheme = () => {
 	const { setColorTheme } = useContext(ThemeContext);
 
 	function handlerTheme() {
@@ -16,8 +15,14 @@ export const ChangeThemeButton = () => {
 	}
 
 	return (
-		<S.ChangeThemeButton onClick={handlerTheme} type="button">
+		<DefaultButton onClick={handlerTheme} type="button">
 			<BsSunFill size={24} />
-		</S.ChangeThemeButton>
+		</DefaultButton>
 	);
 };
+
+const DefaultButton = styled.button`
+	cursor: pointer;
+	background: transparent;
+	color: ${({ theme }) => theme.colors.text};
+`;

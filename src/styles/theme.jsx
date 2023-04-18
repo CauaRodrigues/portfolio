@@ -5,6 +5,8 @@ const colors = {
 		primary: "#336DC3",
 		primary_dark: "#173259",
 		text: "#ffffff",
+		light: "#ffffff",
+		black: "#000000",
 	},
 	light: {
 		name: "light",
@@ -12,6 +14,8 @@ const colors = {
 		primary: "#336DC3",
 		primary_dark: "#173259",
 		text: "#08070C",
+		light: "#ffffff",
+		black: "#000000",
 	},
 };
 
