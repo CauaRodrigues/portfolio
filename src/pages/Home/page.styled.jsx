@@ -13,7 +13,8 @@ export const Section = styled.section`
 	}
 
 	@media (max-width: 1000px) {
-		justify-content: space-around;
+		min-height: 70vh;
+		justify-content: space-evenly;
 		flex-direction: column;
 		gap: 2rem;
 	}

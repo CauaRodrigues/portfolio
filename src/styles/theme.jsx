@@ -7,6 +7,8 @@ const colors = {
 		text: "#ffffff",
 		light: "#ffffff",
 		black: "#000000",
+		gray: "#8f9ba8",
+		blur: "rgba(114, 92, 177, .14)",
 	},
 	light: {
 		name: "light",
@@ -16,6 +18,7 @@ const colors = {
 		text: "#08070C",
 		light: "#ffffff",
 		black: "#000000",
+		gray: "#8f9ba8",
 	},
 };
 
