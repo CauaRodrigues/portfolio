@@ -46,41 +46,19 @@ export const MenuMobile = styled(Menu)`
 
 export const Link = styled.li`
 	a {
+		padding: 6px;
 		position: relative;
-		font-weight: ${({ theme }) => theme.fonts.fw.bd};
+		font-weight: ${({ theme }) => theme.fonts.fw.sb};
 		font-size: min(1rem, 5vw);
 		color: ${({ theme }) => theme.colors.gray};
-
-		&::before,
-		&::after {
-			content: " ";
-			height: 1px;
-			position: absolute;
-			left: 0;
-			right: 0;
-			background-color: ${({ theme }) => theme.colors.gray};
-			transform-origin: center right;
-			transform: scaleX(0);
-			transition: transform 0.5s ease-in-out;
-		}
-
-		&::before {
-			top: 0;
-		}
-
-		&::after {
-			bottom: 0;
-		}
+		border-radius: 8px;
+		transition: all 0.6s;
 
 		&:hover {
-			color: ${({ theme }) => theme.colors.light};
-
-			&::before,
-			&:after {
-				background-color: ${({ theme }) => theme.colors.light};
-				transform-origin: center left;
-				transform: scaleX(1);
-			}
+			color: ${({ theme }) =>
+				theme.colors.name === "dark" ? theme.colors.light : theme.colors.black};
+			background-color: ${({ theme }) =>
+				theme.colors.name === "dark" ? theme.colors.blur : theme.colors.hover};
 		}
 	}
 `;

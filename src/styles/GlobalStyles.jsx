@@ -40,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
     background-image: ${({ theme }) =>
 			theme.colors.name === "dark"
 				? "-webkit-linear-gradient(45deg, rgba(90, 77, 143, 0.92) 22.31%, rgba(112, 182, 242, 0.82) 60.19%)"
-				: "-webkit-linear-gradient(45deg, #004B8D, #0068C4 30%)"};
+				: "-webkit-linear-gradient(45deg, #6348adc6, rgba(103, 55, 235, 0.623) 30%)"};
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

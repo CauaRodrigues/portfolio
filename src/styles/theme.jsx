@@ -2,7 +2,7 @@ const colors = {
 	dark: {
 		name: "dark",
 		main: "#08070C",
-		primary: "#336DC3",
+		primary: "#4f6abb",
 		primary_dark: "#173259",
 		text: "#ffffff",
 		light: "#ffffff",
@@ -12,13 +12,15 @@ const colors = {
 	},
 	light: {
 		name: "light",
-		main: "#ffffff",
-		primary: "#336DC3",
+		main: "#f8f8f2",
+		primary: "#3853a3",
 		primary_dark: "#173259",
 		text: "#08070C",
 		light: "#ffffff",
 		black: "#000000",
-		gray: "#8f9ba8",
+		gray: "#51565c",
+		blur: "#d9d4e690",
+		hover: "#a39ab990",
 	},
 };
 

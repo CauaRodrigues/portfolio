@@ -20,19 +20,21 @@ export default function Home() {
 				</p>
 
 				<S.GroupButtons>
-					<StyledButton bgColor={colors.primary} color={colors.light}>
-						<a
-							href="https://drive.google.com/file/d/1qEy4-NN13YhEoKtGoaGLZGQ35q1kH6A7/view?usp=sharing"
-							target="_blank"
-							referrerPolicy="no-referrer"
-						>
+					<a
+						href="https://drive.google.com/file/d/1qEy4-NN13YhEoKtGoaGLZGQ35q1kH6A7/view?usp=sharing"
+						target="_blank"
+						referrerPolicy="no-referrer"
+					>
+						<StyledButton bgColor={colors.primary} color={colors.light}>
 							Download CV
-						</a>
-					</StyledButton>
+						</StyledButton>
+					</a>
 
-					<StyledButton color={colors.primary} borderSize={3} hover="invert">
-						<Link to="/about">Sobre Mim</Link>
-					</StyledButton>
+					<Link to="/about">
+						<StyledButton color={colors.primary} borderSize={3} hover="invert">
+							Sobre Mim
+						</StyledButton>
+					</Link>
 				</S.GroupButtons>
 			</S.Content>
 

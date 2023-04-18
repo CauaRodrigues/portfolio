@@ -30,7 +30,7 @@ export const StyledButton = styled.button`
             border-color: ${theme.colors.light};
           `;
 				default:
-					return "opacity: 0.4;";
+					return "opacity: 0.75;";
 			}
 		}}
 	}
