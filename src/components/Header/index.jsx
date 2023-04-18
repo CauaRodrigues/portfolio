@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import MediaQuery from "react-responsive";
 import { Link } from "react-router-dom";
 import { BsSearch, BsSunFill } from "react-icons/bs";
 
 import MenuMobile from "@components/MenuMobile";
 import Logo from "@styled/components/Logo";
+import { ThemeContext } from "@context/ThemeContext";
+import { colors } from "@styled/theme";
+
 import * as S from "./header.styled";
 
 export default function Header() {
+	const { setColorTheme } = useContext(ThemeContext);
+
+	const handlerTheme = () => {
+		setColorTheme((prevValue) =>
+			prevValue.name === "dark" ? colors.light : colors.dark
+		);
+	};
+
 	return (
 		<S.Header>
 			<Logo />
@@ -34,7 +45,7 @@ export default function Header() {
 				</S.Menu>
 
 				<S.Buttons>
-					<button type="button">
+					<button type="button" onClick={handlerTheme}>
 						<BsSunFill size={24} />
 					</button>
 

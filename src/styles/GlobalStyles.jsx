@@ -18,8 +18,8 @@ const GlobalStyles = createGlobalStyle`
   
   body,
   html {
-    background-color: ${({ theme }) => theme.colors.dark.main};
-    color: ${({ theme }) => theme.colors.dark.light};
+    background-color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }) => theme.colors.light};
   }
   
   ul,

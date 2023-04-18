@@ -19,6 +19,10 @@ export default defineConfig({
 				find: "@styled",
 				replacement: path.resolve(__dirname, "src/styles"),
 			},
+			{
+				find: "@context",
+				replacement: path.resolve(__dirname, "src/contexts"),
+			},
 		],
 	},
 });

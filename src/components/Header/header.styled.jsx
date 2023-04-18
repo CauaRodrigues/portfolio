@@ -36,7 +36,7 @@ export const Link = styled.li`
 	a {
 		font-weight: ${({ theme }) => theme.fonts.fw.sb};
 		font-size: min(1rem, 5vw);
-		color: ${({ theme }) => theme.colors.dark.light};
+		color: ${({ theme }) => theme.colors.light};
 	}
 `;
 
@@ -48,7 +48,7 @@ export const Buttons = styled.div`
 
 	button {
 		background-color: transparent;
-		color: ${({ theme }) => theme.colors.dark.light};
+		color: ${({ theme }) => theme.colors.light};
 		cursor: pointer;
 	}
 `;

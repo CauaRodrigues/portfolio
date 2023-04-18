@@ -11,6 +11,6 @@ export const MenuMobile = styled.button`
 	div {
 		width: 100%;
 		padding: 1px;
-		background-color: ${({ theme }) => theme.colors.dark.light};
+		background-color: ${({ theme }) => theme.colors.light};
 	}
 `;
