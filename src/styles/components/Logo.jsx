@@ -1,12 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export default function Logo() {
-	return <StyledLogo className="gradient_text">Cauã</StyledLogo>;
+	return (
+		<Link to="/">
+			<StyledLogo src="/assets/profile.png" />
+		</Link>
+	);
 }
 
-const StyledLogo = styled.div`
-	font-family: ${({ theme }) => theme.fonts.fm.fira_code};
-	font-size: min(2.3rem, 10vw);
-	font-weight: ${({ theme }) => theme.fonts.fw.bd};
+const StyledLogo = styled.img`
+	width: 62px;
+	border: 3px solid ${({ theme }) => theme.colors.main};
+	border-radius: 50%;
 `;

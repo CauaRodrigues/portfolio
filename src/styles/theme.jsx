@@ -2,8 +2,8 @@ const colors = {
 	dark: {
 		name: "dark",
 		main: "#08070C",
-		primary: "#4f6abb",
-		primary_dark: "#173259",
+		primary: "#6550A3",
+		primary_dark: "rgba(101, 80, 163, .48)",
 		text: "#ffffff",
 		light: "#ffffff",
 		black: "#000000",
