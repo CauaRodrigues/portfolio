@@ -4,7 +4,7 @@ import * as S from "./section.styled";
 export default function Skills() {
 	return (
 		<S.SkillsSection>
-			<div className="icons">
+			<div className="content">
 				<img src="assets/skills/JavaScript.png" alt="JavaScript" />
 				<img src="assets/skills/TypeScript.png" alt="TypeScript" />
 				<img src="assets/skills/Sass.png" alt="Sass" />

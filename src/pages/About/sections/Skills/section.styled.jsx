@@ -8,7 +8,7 @@ export const SkillsSection = styled.section`
 	display: flex;
 	justify-content: center;
 
-	.icons {
+	.content {
 		width: 60%;
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
