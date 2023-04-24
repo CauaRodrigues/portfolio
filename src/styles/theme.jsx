@@ -3,7 +3,7 @@ const colors = {
 		name: "dark",
 		main: "#08070C",
 		primary: "#6550A3",
-		primary_dark: "rgba(101, 80, 163, .48)",
+		primary_dark: "#281953",
 		text: "#ffffff",
 		light: "#ffffff",
 		black: "#000000",
