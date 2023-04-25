@@ -10,17 +10,13 @@ export const Header = styled.header`
 	gap: 0.6rem;
 	background-color: ${({ theme }) => theme.colors.blur};
 
-	@media (max-width: 550px) {
+	@media (max-width: 620px) {
 		justify-content: space-between;
 	}
 `;
 
 export const Menu = styled.nav`
-	width: 26%;
-
-	@media (max-width: 928px) {
-		width: 45%;
-	}
+	width: max-content;
 
 	ul {
 		width: 100%;
@@ -31,26 +27,29 @@ export const Menu = styled.nav`
 `;
 
 export const MenuMobile = styled(Menu)`
-	border-top: 2px solid ${({ theme }) => theme.colors.main};
 	width: 100%;
 	min-height: 7vh;
+	padding: 25px 16px;
 	margin-bottom: 1rem;
-	display: flex;
-	align-items: center;
-	background-color: ${({ theme }) => theme.colors.blur};
 
-	ul {
-		justify-content: space-around;
-	}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1.2rem;
+
+	background-color: ${({ theme }) => theme.colors.blur};
+	border-top: 2px solid ${({ theme }) => theme.colors.main};
+	overflow-x: scroll;
 `;
 
-export const Link = styled.li`
+export const NavLink = styled.li`
 	a {
 		padding: 8px 10px;
-		position: relative;
+
+		color: ${({ theme }) => theme.colors.gray};
 		font-weight: ${({ theme }) => theme.fonts.fw.sb};
 		font-size: min(1rem, 5vw);
-		color: ${({ theme }) => theme.colors.gray};
+
 		border-radius: 8px;
 		transition: all 0.6s;
 
@@ -58,18 +57,20 @@ export const Link = styled.li`
 			color: ${({ theme }) => theme.colors.light};
 			background-color: ${({ theme }) => theme.colors.blur};
 		}
+
+		${(props) => {
+			if (props.active) {
+				return `
+					color: ${props.theme.colors.light};
+					background-color: ${props.theme.colors.blur};
+				`;
+			}
+		}}
 	}
 `;
 
-export const Buttons = styled.div`
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 1rem;
-
-	button {
-		background-color: transparent;
-		color: ${({ theme }) => theme.colors.text};
-		cursor: pointer;
-	}
+export const Button = styled.button`
+	background-color: transparent;
+	color: ${({ theme }) => theme.colors.text};
+	cursor: pointer;
 `;

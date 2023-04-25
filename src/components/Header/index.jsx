@@ -9,69 +9,64 @@ import * as S from "./header.styled";
 
 export default function Header() {
 	const [, { pathname }] = useMatches();
-	console.log(pathname);
 
 	return (
 		<>
 			<S.Header>
 				<Logo />
 
-				<MediaQuery minWidth={550}>
+				<MediaQuery minWidth={620}>
 					<S.Menu>
 						<ul>
-							<S.Link active={pathname === "/"}>
+							<S.NavLink active={pathname === "/"}>
 								<Link to="/">Home</Link>
-							</S.Link>
+							</S.NavLink>
 
-							<S.Link active={pathname === "/about"}>
+							<S.NavLink active={pathname === "/about"}>
 								<Link to="/about">Sobre</Link>
-							</S.Link>
+							</S.NavLink>
 
-							<S.Link active={pathname === "/projects"}>
+							<S.NavLink active={pathname === "/projects"}>
 								<Link to="/projects">Projects</Link>
-							</S.Link>
+							</S.NavLink>
 
-							<S.Link active={pathname === "/setup"}>
+							<S.NavLink active={pathname === "/setup"}>
 								<Link to="/setup">Setup</Link>
-							</S.Link>
+							</S.NavLink>
 
-							<S.Link active={pathname === "/events"}>
+							<S.NavLink active={pathname === "/events"}>
 								<Link to="/events">Eventos</Link>
-							</S.Link>
+							</S.NavLink>
 						</ul>
 					</S.Menu>
 				</MediaQuery>
 
-				<S.Buttons>
-					<button type="button">
-						<BsSearch size={18} />
-					</button>
-				</S.Buttons>
+				<S.Button>
+					<BsSearch size={22} />
+				</S.Button>
 			</S.Header>
 
-			<MediaQuery maxWidth={549}>
+			<MediaQuery maxWidth={619}>
 				<S.MenuMobile noHeader>
-					<ul>
-						<S.Link active={pathname === "/"}>
-							<Link to="/">Home</Link>
-						</S.Link>
+					<S.NavLink active={pathname === "/"}>
+						<Link to="/">Home</Link>
+					</S.NavLink>
 
-						<S.Link active={pathname === "/about"}>
-							<Link to="/about">Sobre</Link>
-						</S.Link>
+					<S.NavLink active={pathname === "/about"}>
+						<Link to="/about">Sobre</Link>
+					</S.NavLink>
 
-						<S.Link active={pathname === "/projects"}>
-							<Link to="/projects">Projects</Link>
-						</S.Link>
+					<S.NavLink active={pathname === "/projects"}>
+						<Link to="/projects">Projects</Link>
+					</S.NavLink>
 
-						<S.Link active={pathname === "/setup"}>
-							<Link to="/setup">Setup</Link>
-						</S.Link>
+					<S.NavLink active={pathname === "/setup"}>
+						<Link to="/setup">Setup</Link>
+					</S.NavLink>
 
-						<S.Link active={pathname === "/events"}>
-							<Link to="/events">Eventos</Link>
-						</S.Link>
-					</ul>
+					<S.NavLink active={pathname === "/events"}>
+						<Link to="/events">Eventos</Link>
+					</S.NavLink>
 				</S.MenuMobile>
 			</MediaQuery>
 		</>

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const SectionAbout = styled.section`
-	width: 100%;
-	padding: 24px 12px;
+	width: 90%;
+	padding: 24px 0;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 
 	@media (max-width: 780px) {
 		align-items: center;
@@ -14,21 +14,21 @@ export const SectionAbout = styled.section`
 `;
 
 export const TextContent = styled.div`
-	width: 40%;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 	gap: 1rem;
 
-	@media (max-width: 920px) {
-		width: 50%;
-	}
-
 	@media (max-width: 780px) {
 		align-items: center;
 		width: 90%;
 		text-align: start;
+	}
+
+	@media (max-width: 500px) {
+		width: 100%;
 	}
 
 	h1 {
@@ -51,7 +51,7 @@ export const TextContent = styled.div`
 `;
 
 export const ImageContent = styled.div`
-	width: 30%;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -76,6 +76,10 @@ export const Avatar = styled.figure`
 		width: max-content;
 	}
 
+	@media (max-width: 500px) {
+		width: 100%;
+	}
+
 	&::after {
 		content: " ";
 		height: 100%;
@@ -98,6 +102,10 @@ export const Avatar = styled.figure`
 		border-radius: 31px;
 		transition: ease-in-out 0.8s;
 
+		@media (max-width: 500px) {
+			width: 100%;
+		}
+
 		&:hover {
 			transform: translate(30px, 30px);
 
@@ -114,6 +122,10 @@ export const Contact = styled.div`
 	flex-direction: column;
 	align-items: center;
 	gap: 1rem;
+
+	@media (max-width: 500px) {
+		margin: 0;
+	}
 `;
 
 export const SocialIcon = styled.figure`
@@ -124,6 +136,7 @@ export const SocialIcon = styled.figure`
 
 	figcaption {
 		font-weight: ${({ theme }) => theme.fonts.fw.md};
+		font-size: min(1rem, 4.5vw);
 	}
 
 	img {
