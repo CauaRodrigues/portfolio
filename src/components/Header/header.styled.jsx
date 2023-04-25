@@ -46,7 +46,7 @@ export const MenuMobile = styled(Menu)`
 
 export const Link = styled.li`
 	a {
-		padding: 6px;
+		padding: 8px 10px;
 		position: relative;
 		font-weight: ${({ theme }) => theme.fonts.fw.sb};
 		font-size: min(1rem, 5vw);

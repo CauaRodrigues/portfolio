@@ -28,7 +28,7 @@ export const TextContent = styled.div`
 	@media (max-width: 780px) {
 		align-items: center;
 		width: 90%;
-		text-align: center;
+		text-align: start;
 	}
 
 	h1 {

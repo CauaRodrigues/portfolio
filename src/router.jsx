@@ -5,6 +5,9 @@ import Layout from "@components/Layout";
 import Error from "@pages/Error";
 import Home from "@pages/Home";
 import About from "@pages/About";
+import Projects from "@pages/Projects";
+import Setup from "@pages/Setup";
+import Events from "@pages/Events";
 
 const Router = createBrowserRouter([
 	{
@@ -19,6 +22,18 @@ const Router = createBrowserRouter([
 			{
 				path: "/about",
 				element: <About />,
+			},
+			{
+				path: "/projects",
+				element: <Projects />,
+			},
+			{
+				path: "/setup",
+				element: <Setup />,
+			},
+			{
+				path: "/events",
+				element: <Events />,
 			},
 		],
 	},

@@ -10,8 +10,8 @@ export default function About() {
 	return (
 		<main>
 			<AboutMe />
-			<Skills />
 			<Projects />
+			<Skills />
 			<Courses />
 			<Contact />
 		</main>
