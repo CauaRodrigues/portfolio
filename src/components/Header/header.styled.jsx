@@ -55,10 +55,8 @@ export const Link = styled.li`
 		transition: all 0.6s;
 
 		&:hover {
-			color: ${({ theme }) =>
-				theme.colors.name === "dark" ? theme.colors.light : theme.colors.black};
-			background-color: ${({ theme }) =>
-				theme.colors.name === "dark" ? theme.colors.blur : theme.colors.hover};
+			color: ${({ theme }) => theme.colors.light};
+			background-color: ${({ theme }) => theme.colors.blur};
 		}
 	}
 `;

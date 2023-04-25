@@ -3,7 +3,6 @@ import { Link, useMatches } from "react-router-dom";
 import MediaQuery from "react-responsive";
 import { BsSearch } from "react-icons/bs";
 
-import { HandlerTheme } from "@components/HandlerTheme";
 import Logo from "@styled/components/Logo";
 
 import * as S from "./header.styled";
@@ -44,8 +43,6 @@ export default function Header() {
 				</MediaQuery>
 
 				<S.Buttons>
-					<HandlerTheme />
-
 					<button type="button">
 						<BsSearch size={18} />
 					</button>
