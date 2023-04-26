@@ -15,7 +15,7 @@ export const ProjectsSection = styled.section`
 		margin: 1rem 0;
 	}
 
-	button {
+	a {
 		align-self: center;
 	}
 `;
@@ -35,21 +35,41 @@ export const Project = styled.div`
 	text-align: right;
 	gap: 1rem;
 
+	@media (max-width: 820px) {
+		flex-direction: column;
+	}
+
 	&:nth-child(2n) {
 		flex-direction: row-reverse;
 		text-align: left;
 
+		@media (max-width: 820px) {
+			flex-direction: column;
+		}
+
 		.align-group {
 			align-self: flex-start;
+
+			@media (max-width: 820px) {
+				align-self: center;
+			}
 		}
 	}
 
 	img.project-image {
-		width: 100%;
+		width: 50%;
 		border-radius: 21px;
 		opacity: 0.5;
 		transition: all 1s;
 		box-shadow: 5px 5px 16px ${({ theme }) => theme.colors.black};
+
+		@media (max-width: 820px) {
+			width: 80%;
+		}
+
+		@media (max-width: 500px) {
+			width: 100%;
+		}
 
 		&:hover {
 			opacity: 1;
@@ -59,6 +79,10 @@ export const Project = styled.div`
 
 	.align-group {
 		align-self: flex-end;
+
+		@media (max-width: 820px) {
+			align-self: center;
+		}
 	}
 `;
 
@@ -67,6 +91,16 @@ export const InfosProject = styled.div`
 	flex-direction: column;
 	gap: 0.8rem;
 	z-index: 1;
+
+	@media (max-width: 820px) {
+		width: 80%;
+		text-align: center;
+		align-items: center;
+	}
+
+	@media (max-width: 500px) {
+		width: 100%;
+	}
 
 	h3 {
 		font-weight: ${({ theme }) => theme.fonts.fw.bd};
@@ -95,6 +129,12 @@ export const Technologies = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5rem;
+
+	@media (max-width: 820px) {
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
 
 	span {
 		font-size: min(1rem, 4vw);

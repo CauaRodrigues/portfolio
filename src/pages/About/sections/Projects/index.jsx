@@ -139,9 +139,11 @@ export default function Projects() {
 					</S.InfosProject>
 				</S.Project>
 
-				<StyledButton bgColor={colors.primary} color={colors.light}>
-					<Link to="/projects">Ver Mais Projetos</Link>
-				</StyledButton>
+				<Link to="/projects">
+					<StyledButton bgColor={colors.primary} color={colors.light}>
+						Ver Mais Projetos
+					</StyledButton>
+				</Link>
 			</S.Content>
 		</S.ProjectsSection>
 	);
