@@ -3,6 +3,7 @@ import { useTheme } from "styled-components";
 import { StyledButton } from "@styled/components/Button";
 
 import * as S from "./section.styled";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
 	const { colors } = useTheme();
@@ -39,8 +40,16 @@ export default function Projects() {
 						</S.Technologies>
 
 						<S.GroupLink className="align-group">
-							<img src="assets/icons/github.svg" alt="repositório" />
-							<img src="assets/icons/link.svg" alt="link da aplicação" />
+							<a
+								href="https://github.com/CauaRodrigues/rick-and-morty-search"
+								target="_blank"
+							>
+								<img src="assets/icons/github.svg" alt="repositório" />
+							</a>
+
+							<a href="https://pickles-search.vercel.app/" target="_blank">
+								<img src="assets/icons/link.svg" alt="link da aplicação" />
+							</a>
 						</S.GroupLink>
 					</S.InfosProject>
 				</S.Project>
@@ -49,7 +58,7 @@ export default function Projects() {
 					<img
 						className="project-image"
 						src="assets/projects/space.png"
-						alt="Search Pickles"
+						alt="Space Tourism"
 					/>
 
 					<S.InfosProject>
@@ -72,8 +81,16 @@ export default function Projects() {
 						</S.Technologies>
 
 						<S.GroupLink className="align-group">
-							<img src="assets/icons/github.svg" alt="repositório" />
-							<img src="assets/icons/link.svg" alt="link da aplicação" />
+							<a
+								href="https://github.com/CauaRodrigues/space-tourism"
+								target="_blank"
+							>
+								<img src="assets/icons/github.svg" alt="repositório" />
+							</a>
+
+							<a href="https://space-tourism-aka.vercel.app/" target="_blank">
+								<img src="assets/icons/link.svg" alt="link da aplicação" />
+							</a>
 						</S.GroupLink>
 					</S.InfosProject>
 				</S.Project>
@@ -82,7 +99,7 @@ export default function Projects() {
 					<img
 						className="project-image"
 						src="assets/projects/thincut.png"
-						alt="Search Pickles"
+						alt="Thin Cut"
 					/>
 
 					<S.InfosProject>
@@ -105,14 +122,25 @@ export default function Projects() {
 						</S.Technologies>
 
 						<S.GroupLink className="align-group">
-							<img src="assets/icons/github.svg" alt="repositório" />
-							<img src="assets/icons/link.svg" alt="link da aplicação" />
+							<a
+								href="https://github.com/CauaRodrigues/thin-cut"
+								target="_blank"
+							>
+								<img src="assets/icons/github.svg" alt="repositório" />
+							</a>
+
+							<a
+								href="https://github.com/CauaRodrigues/thin-cut"
+								target="_blank"
+							>
+								<img src="assets/icons/link.svg" alt="link da aplicação" />
+							</a>
 						</S.GroupLink>
 					</S.InfosProject>
 				</S.Project>
 
 				<StyledButton bgColor={colors.primary} color={colors.light}>
-					Ver Mais Projetos
+					<Link to="/projects">Ver Mais Projetos</Link>
 				</StyledButton>
 			</S.Content>
 		</S.ProjectsSection>

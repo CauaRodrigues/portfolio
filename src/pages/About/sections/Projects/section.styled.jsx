@@ -22,7 +22,6 @@ export const ProjectsSection = styled.section`
 
 export const Content = styled.div`
 	width: 100%;
-
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
@@ -34,6 +33,7 @@ export const Project = styled.div`
 	align-items: center;
 	justify-content: center;
 	text-align: right;
+	gap: 1rem;
 
 	&:nth-child(2n) {
 		flex-direction: row-reverse;
@@ -45,7 +45,16 @@ export const Project = styled.div`
 	}
 
 	img.project-image {
+		width: 100%;
 		border-radius: 21px;
+		opacity: 0.5;
+		transition: all 1s;
+		box-shadow: 5px 5px 16px ${({ theme }) => theme.colors.black};
+
+		&:hover {
+			opacity: 1;
+			transform: scale(1.06);
+		}
 	}
 
 	.align-group {
@@ -57,6 +66,7 @@ export const InfosProject = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 0.8rem;
+	z-index: 1;
 
 	h3 {
 		font-weight: ${({ theme }) => theme.fonts.fw.bd};
@@ -72,6 +82,7 @@ export const InfosProject = styled.div`
 
 export const BoxDescription = styled.div`
 	padding: 18px;
+	align-self: ${(props) => `flex-${props.align}`};
 
 	background-color: ${({ theme }) => theme.colors.primary_dark};
 	border-radius: 8px;
@@ -86,8 +97,8 @@ export const Technologies = styled.div`
 	gap: 0.5rem;
 
 	span {
-		font-size: min(1.1rem, 4vw);
-		font-weight: ${({ theme }) => theme.fonts.fw.sb};
+		font-size: min(1rem, 4vw);
+		font-weight: ${({ theme }) => theme.fonts.fw.rg};
 	}
 `;
 
