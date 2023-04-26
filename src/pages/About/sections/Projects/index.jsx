@@ -13,11 +13,15 @@ export default function Projects() {
 
 			<S.Content>
 				<S.Project>
-					<img src="assets/projects/pickles.png" alt="Search Pickles" />
+					<img
+						className="project-image"
+						src="assets/projects/pickles.png"
+						alt="Search Pickles"
+					/>
 
 					<S.InfosProject>
 						<h3>Pickles Search</h3>
-						<span>Single Page Aplication</span>
+						<span className="aplication-type">Single Page Aplication</span>
 
 						<S.BoxDescription>
 							<p>
@@ -27,26 +31,30 @@ export default function Projects() {
 							</p>
 						</S.BoxDescription>
 
-						<S.Technologies>
+						<S.Technologies className="align-group">
 							<span>JavaScript</span>
 							<span>React</span>
 							<span>Styled-Components</span>
 							<span>Axios</span>
 						</S.Technologies>
 
-						<div className="links-project">
+						<S.GroupLink className="align-group">
 							<img src="assets/icons/github.svg" alt="repositório" />
 							<img src="assets/icons/link.svg" alt="link da aplicação" />
-						</div>
+						</S.GroupLink>
 					</S.InfosProject>
 				</S.Project>
 
 				<S.Project>
-					<img src="assets/projects/space.png" alt="Search Pickles" />
+					<img
+						className="project-image"
+						src="assets/projects/space.png"
+						alt="Search Pickles"
+					/>
 
 					<S.InfosProject>
 						<h3>Space Tourism</h3>
-						<span>Single Page Aplication</span>
+						<span className="aplication-type">Single Page Aplication</span>
 
 						<S.BoxDescription>
 							<p>
@@ -56,26 +64,30 @@ export default function Projects() {
 							</p>
 						</S.BoxDescription>
 
-						<S.Technologies>
+						<S.Technologies className="align-group">
 							<span>JavaScript</span>
 							<span>React</span>
 							<span>Styled-Components</span>
 							<span>TypeScript</span>
 						</S.Technologies>
 
-						<S.Links>
+						<S.GroupLink className="align-group">
 							<img src="assets/icons/github.svg" alt="repositório" />
 							<img src="assets/icons/link.svg" alt="link da aplicação" />
-						</S.Links>
+						</S.GroupLink>
 					</S.InfosProject>
 				</S.Project>
 
 				<S.Project>
-					<img src="assets/projects/thincut.png" alt="Search Pickles" />
+					<img
+						className="project-image"
+						src="assets/projects/thincut.png"
+						alt="Search Pickles"
+					/>
 
 					<S.InfosProject>
 						<h3>Thin Cut</h3>
-						<span>Landing Page</span>
+						<span className="aplication-type">Landing Page</span>
 
 						<S.BoxDescription>
 							<p>
@@ -85,17 +97,17 @@ export default function Projects() {
 							</p>
 						</S.BoxDescription>
 
-						<S.Technologies>
+						<S.Technologies className="align-group">
 							<span>JavaScript</span>
 							<span>React</span>
 							<span>Styled-Components</span>
 							<span>Vite</span>
 						</S.Technologies>
 
-						<S.Links>
+						<S.GroupLink className="align-group">
 							<img src="assets/icons/github.svg" alt="repositório" />
 							<img src="assets/icons/link.svg" alt="link da aplicação" />
-						</S.Links>
+						</S.GroupLink>
 					</S.InfosProject>
 				</S.Project>
 
