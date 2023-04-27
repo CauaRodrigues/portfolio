@@ -132,15 +132,11 @@ export const SocialIcon = styled.figure`
 	display: flex;
 	align-items: center;
 	gap: 12px;
-	cursor: pointer;
+	color: ${({ theme }) => theme.colors.light};
 
 	figcaption {
 		font-weight: ${({ theme }) => theme.fonts.fw.md};
 		font-size: min(1rem, 4.5vw);
-	}
-
-	img {
-		width: 26px;
 	}
 `;
 

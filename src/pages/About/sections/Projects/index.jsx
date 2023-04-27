@@ -1,9 +1,11 @@
 import React from "react";
-import { useTheme } from "styled-components";
-import { StyledButton } from "@styled/components/Button";
-
-import * as S from "./section.styled";
 import { Link } from "react-router-dom";
+import { useTheme } from "styled-components";
+import { BsGithub } from "react-icons/bs";
+import { TbExternalLink } from "react-icons/tb";
+
+import { StyledButton } from "@styled/components/Button";
+import * as S from "./section.styled";
 
 export default function Projects() {
 	const { colors } = useTheme();
@@ -44,11 +46,11 @@ export default function Projects() {
 								href="https://github.com/CauaRodrigues/rick-and-morty-search"
 								target="_blank"
 							>
-								<img src="assets/icons/github.svg" alt="repositório" />
+								<BsGithub size={26} color={colors.light} />
 							</a>
 
 							<a href="https://pickles-search.vercel.app/" target="_blank">
-								<img src="assets/icons/link.svg" alt="link da aplicação" />
+								<TbExternalLink size={30} color={colors.light} />
 							</a>
 						</S.GroupLink>
 					</S.InfosProject>
@@ -85,11 +87,11 @@ export default function Projects() {
 								href="https://github.com/CauaRodrigues/space-tourism"
 								target="_blank"
 							>
-								<img src="assets/icons/github.svg" alt="repositório" />
+								<BsGithub size={26} color={colors.light} />
 							</a>
 
 							<a href="https://space-tourism-aka.vercel.app/" target="_blank">
-								<img src="assets/icons/link.svg" alt="link da aplicação" />
+								<TbExternalLink size={30} color={colors.light} />
 							</a>
 						</S.GroupLink>
 					</S.InfosProject>
@@ -126,14 +128,14 @@ export default function Projects() {
 								href="https://github.com/CauaRodrigues/thin-cut"
 								target="_blank"
 							>
-								<img src="assets/icons/github.svg" alt="repositório" />
+								<BsGithub size={26} color={colors.light} />
 							</a>
 
 							<a
 								href="https://github.com/CauaRodrigues/thin-cut"
 								target="_blank"
 							>
-								<img src="assets/icons/link.svg" alt="link da aplicação" />
+								<TbExternalLink size={30} color={colors.light} />
 							</a>
 						</S.GroupLink>
 					</S.InfosProject>

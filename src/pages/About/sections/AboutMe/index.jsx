@@ -1,5 +1,9 @@
 import React from "react";
 
+import { MdEmail } from "react-icons/md";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { SiFrontendmentor, SiCodewars } from "react-icons/si";
+
 import * as S from "./section.styled";
 
 export default function AboutMe() {
@@ -35,40 +39,62 @@ export default function AboutMe() {
 				</S.Avatar>
 
 				<S.Contact>
-					<S.SocialIcon>
-						<img src="/assets/icons/github.svg" alt="github icon" />
-						<figcaption>/CauaRodrigues</figcaption>
-					</S.SocialIcon>
+					<a
+						href="https://github.com/CauaRodrigues"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<S.SocialIcon>
+							<BsGithub size={26} />
+							<figcaption>/CauaRodrigues</figcaption>
+						</S.SocialIcon>
+					</a>
 
-					<S.SocialIcon>
-						<img src="/assets/icons/linkedin.svg" alt="linkedin icon" />
-						<figcaption>/in/cauaassis</figcaption>
-					</S.SocialIcon>
+					<a
+						href="https://www.linkedin.com/in/cauaassis/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<S.SocialIcon>
+							<BsLinkedin size={26} />
+							<figcaption>/in/cauaassis</figcaption>
+						</S.SocialIcon>
+					</a>
 
-					<S.SocialIcon>
-						<img src="/assets/icons/discord.svg" alt="discord icon" />
-						<figcaption>akamatu#0081</figcaption>
-					</S.SocialIcon>
+					<a
+						href="https://www.frontendmentor.io/profile/CauaRodrigues"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<S.SocialIcon>
+							<SiFrontendmentor size={26} />
+							<figcaption>@CauaRodrigues</figcaption>
+						</S.SocialIcon>
+					</a>
 
-					<S.SocialIcon>
-						<img
-							src="/assets/icons/frontendmentor.svg"
-							alt="frontend mentor icon"
-						/>
-						<figcaption>@CauaRodrigues</figcaption>
-					</S.SocialIcon>
-
-					<S.SocialIcon>
-						<img src="/assets/icons/codewars.svg" alt="codewars icon" />
-						<figcaption>@akamatu</figcaption>
-					</S.SocialIcon>
+					<a
+						href="https://www.codewars.com/users/akamatu"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<S.SocialIcon>
+							<SiCodewars size={26} />
+							<figcaption>@akamatu</figcaption>
+						</S.SocialIcon>
+					</a>
 
 					<S.Divider />
 
-					<S.SocialIcon>
-						<img src="/assets/icons/email.svg" alt="email icon" />
-						<figcaption>assis.developer@gmail.com</figcaption>
-					</S.SocialIcon>
+					<a
+						href="mailto:assis.developer@gmail.com"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<S.SocialIcon>
+							<MdEmail size={26} />
+							<figcaption>assis.developer@gmail.com</figcaption>
+						</S.SocialIcon>
+					</a>
 				</S.Contact>
 			</S.ImageContent>
 		</S.SectionAbout>
