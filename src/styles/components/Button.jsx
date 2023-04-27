@@ -11,7 +11,7 @@ export const StyledButton = styled.button`
 	color: ${({ color }) => color};
 	font-weight: ${({ theme }) => theme.fonts.fw.sb};
 	font-size: min(0.99rem, 5vw);
-	transition: all 0.4s;
+	transition: all 0.6s;
 	cursor: pointer;
 
 	a {
@@ -26,8 +26,8 @@ export const StyledButton = styled.button`
 				case "invert":
 					return `
             background-color: ${color};
-            color: ${theme.colors.light};
-            border-color: ${theme.colors.light};
+            color: #0f121b;
+            border-color: #0f121b;
           `;
 				default:
 					return "opacity: 0.75;";
