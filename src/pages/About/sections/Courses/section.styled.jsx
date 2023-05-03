@@ -60,6 +60,14 @@ export const TopItem = styled.div`
 	h3 {
 		font-size: min(1.2rem, 6.5vw);
 		font-weight: ${({ theme }) => theme.fonts.fw.bd};
+		color: ${({ theme }) => theme.colors.text};
+
+		a {
+			color: inherit;
+			font-weight: inherit;
+			font-size: inherit;
+			text-decoration: underline;
+		}
 
 		span {
 			font-weight: ${({ theme }) => theme.fonts.fw.th};

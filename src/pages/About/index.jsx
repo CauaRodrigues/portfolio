@@ -22,6 +22,7 @@ export default function About() {
 const ContainerStyled = styled.main`
 	width: 100%;
 	padding: 24px 0;
+	padding-bottom: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

@@ -7,6 +7,7 @@ const colors = {
 	light: "#ffffff",
 	black: "#000000",
 	gray: "#8f9ba8",
+	gray_dark: "#909294",
 	blur: "rgba(114, 92, 177, .14)",
 };
 

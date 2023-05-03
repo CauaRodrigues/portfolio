@@ -1,9 +1,4 @@
 import React from "react";
-
-import { MdEmail } from "react-icons/md";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { SiFrontendmentor, SiCodewars } from "react-icons/si";
-
 import * as S from "./section.styled";
 
 export default function AboutMe() {

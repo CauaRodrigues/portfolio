@@ -37,12 +37,6 @@ export const TextContent = styled.div`
 		font-family: ${({ theme }) => theme.fonts.fm.fira_code};
 		letter-spacing: 2px;
 		font-size: min(3rem, 8vw);
-
-		/* @media (max-width: 780px) {
-			br {
-				display: none;
-			}
-		} */
 	}
 
 	p {

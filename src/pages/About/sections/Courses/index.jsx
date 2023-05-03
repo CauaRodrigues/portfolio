@@ -14,7 +14,14 @@ export default function Courses() {
 				<S.Item>
 					<S.TopItem>
 						<h3>
-							Técnico em Desenvolvimento de Sistemas. <span>SENAI-SP</span>
+							<a
+								href="https://suicobrasileira.sp.senai.br/curso/85566/115/tecnico-em-desenvolvimento-de-sistemas"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Técnico em Desenvolvimento de Sistemas.
+							</a>{" "}
+							<span>SENAI-SP</span>
 						</h3>
 
 						<S.DateItem>
@@ -24,19 +31,26 @@ export default function Courses() {
 					</S.TopItem>
 
 					<S.DescriptionItem>
-						This is an intensive, hands-on learning experience that will
-						challenge you to get out of your chair and out into the real world
-						to talk to people and test your ideas. You'll leave this experience
-						equipped and energized to apply the human-centered design process to
-						challenges across industries, sectors, and geographies to generate
-						breakthrough ideas.
+						Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur
+						tellus, ridiculus sociosqu habitasse mauris pulvinar curae himenaeos
+						suspendisse congue quam, libero vitae sodales eu cras nascetur ante
+						a. Magnis inceptos consequat est dignissim nec vulputate nisl,
+						facilisi interdum faucibus hendrerit purus viverra mollis turpis,
+						urna nibh vivamus id sapien commodo.
 					</S.DescriptionItem>
 				</S.Item>
 
 				<S.Item>
 					<S.TopItem>
 						<h3>
-							Web Moderno JavaScript. <span>Udemy / Cod3r</span>
+							<a
+								href="https://www.udemy.com/course/curso-web/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Web Moderno JavaScript.
+							</a>{" "}
+							<span>Udemy / Cod3r</span>
 						</h3>
 
 						<S.DateItem>
@@ -46,19 +60,26 @@ export default function Courses() {
 					</S.TopItem>
 
 					<S.DescriptionItem>
-						This is an intensive, hands-on learning experience that will
-						challenge you to get out of your chair and out into the real world
-						to talk to people and test your ideas. You'll leave this experience
-						equipped and energized to apply the human-centered design process to
-						challenges across industries, sectors, and geographies to generate
-						breakthrough ideas.
+						Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur
+						tellus, ridiculus sociosqu habitasse mauris pulvinar curae himenaeos
+						suspendisse congue quam, libero vitae sodales eu cras nascetur ante
+						a. Magnis inceptos consequat est dignissim nec vulputate nisl,
+						facilisi interdum faucibus hendrerit purus viverra mollis turpis,
+						urna nibh vivamus id sapien commodo.
 					</S.DescriptionItem>
 				</S.Item>
 
 				<S.Item>
 					<S.TopItem>
 						<h3>
-							Desenvolvedor Front-end. <span>Vai na web</span>
+							<a
+								href="https://vainaweb.com.br/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Desenvolvedor Front-end.
+							</a>{" "}
+							<span>Vai na web</span>
 						</h3>
 
 						<S.DateItem>
@@ -68,12 +89,12 @@ export default function Courses() {
 					</S.TopItem>
 
 					<S.DescriptionItem>
-						This is an intensive, hands-on learning experience that will
-						challenge you to get out of your chair and out into the real world
-						to talk to people and test your ideas. You'll leave this experience
-						equipped and energized to apply the human-centered design process to
-						challenges across industries, sectors, and geographies to generate
-						breakthrough ideas.
+						Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur
+						tellus, ridiculus sociosqu habitasse mauris pulvinar curae himenaeos
+						suspendisse congue quam, libero vitae sodales eu cras nascetur ante
+						a. Magnis inceptos consequat est dignissim nec vulputate nisl,
+						facilisi interdum faucibus hendrerit purus viverra mollis turpis,
+						urna nibh vivamus id sapien commodo.
 					</S.DescriptionItem>
 				</S.Item>
 			</S.List>

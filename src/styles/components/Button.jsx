@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledButton = styled.button`
+	width: ${(props) => `${props.width}px` || "auto"};
 	padding: 13px 18px;
 
 	background-color: ${({ bgColor }) => bgColor || "transparent"};
