@@ -13,7 +13,6 @@ export const ContactSection = styled.section`
 `;
 
 export const ContactTitle = styled.div`
-	width: max-content;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,7 +20,7 @@ export const ContactTitle = styled.div`
 	color: ${({ theme }) => theme.colors.main};
 
 	h2 {
-		font-size: min(2.6rem, 8vw);
+		font-size: min(2.6rem, 9vw);
 		font-weight: ${({ theme }) => theme.fonts.fw.bd};
 	}
 
@@ -45,6 +44,22 @@ export const Form = styled.form`
 		width: 100%;
 		display: flex;
 		gap: 1rem;
+
+		@media (max-width: 530px) {
+			flex-direction: column;
+		}
+	}
+
+	@media (max-width: 850px) {
+		width: 80%;
+	}
+
+	@media (max-width: 700px) {
+		width: 90%;
+	}
+
+	@media (max-width: 500px) {
+		min-height: 60vh;
 	}
 `;
 
@@ -60,7 +75,7 @@ export const FormField = styled.input`
 	margin-top: 7px;
 
 	background: transparent;
-	border: 2px solid ${({ theme }) => theme.colors.gray_dark};
+	border: 2px solid ${({ theme }) => theme.colors.gray};
 	border-radius: 8px;
 	outline: none;
 
@@ -81,7 +96,7 @@ export const FormField = styled.input`
 `;
 
 export const FormLabel = styled.label`
-	color: ${({ theme }) => theme.colors.gray_dark};
+	color: ${({ theme }) => theme.colors.gray};
 	font-weight: ${({ theme }) => theme.fonts.fw.sb};
 `;
 
@@ -102,6 +117,10 @@ export const SocialMedias = styled.div`
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
+
+	@media (max-width: 700px) {
+		width: 80%;
+	}
 `;
 
 export const Divider = styled.div`
@@ -116,10 +135,10 @@ export const LinksIcons = styled.div`
 
 	a {
 		color: ${({ theme }) => theme.colors.light};
-		transition: ease-in-out 1s;
+		transition: all 0.7s;
 
 		&:hover {
-			color: ${({ theme }) => theme.colors.primary_dark};
+			color: ${({ theme }) => theme.colors.main};
 		}
 	}
 `;

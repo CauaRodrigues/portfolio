@@ -31,5 +31,6 @@ const ContainerStyled = styled.main`
 
 	@media (max-width: 580px) {
 		padding: 24px 0;
+		padding-bottom: 0;
 	}
 `;
