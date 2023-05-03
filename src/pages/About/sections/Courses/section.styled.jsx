@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CoursesSection = styled.section`
-	width: 90%;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

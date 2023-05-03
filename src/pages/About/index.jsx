@@ -26,7 +26,7 @@ const ContainerStyled = styled.main`
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
-	gap: 2.5rem;
+	gap: 4rem;
 
 	@media (max-width: 580px) {
 		padding: 24px 0;

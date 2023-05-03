@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const SectionAbout = styled.section`
-	width: 90%;
+	width: 80%;
+	min-height: 80vh;
 	padding: 24px 0;
 	display: flex;
 	justify-content: space-between;
@@ -37,11 +38,11 @@ export const TextContent = styled.div`
 		letter-spacing: 2px;
 		font-size: min(3rem, 8vw);
 
-		@media (max-width: 780px) {
+		/* @media (max-width: 780px) {
 			br {
 				display: none;
 			}
-		}
+		} */
 	}
 
 	p {
@@ -51,7 +52,7 @@ export const TextContent = styled.div`
 `;
 
 export const ImageContent = styled.div`
-	width: 40%;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

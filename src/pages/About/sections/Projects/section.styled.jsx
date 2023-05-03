@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsSection = styled.section`
-	width: 90%;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -12,7 +12,7 @@ export const ProjectsSection = styled.section`
 		font-size: min(2.3rem, 8vw);
 		font-weight: ${({ theme }) => theme.fonts.fw.bd};
 		font-family: ${({ theme }) => theme.fonts.fm.fira_code};
-		margin: 1rem 0;
+		margin: 3rem 0;
 	}
 
 	a {
