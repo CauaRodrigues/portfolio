@@ -15,11 +15,11 @@ export const data = [
 		techsList: [
 			"JavaScript",
 			"React",
-			"Styled Components",
-			"Axios",
 			"Yarn",
-			"React Responsive",
+			"Axios",
 			"React Icons",
+			"React Responsive",
+			"Styled Components",
 		],
 	},
 	{
@@ -37,9 +37,9 @@ export const data = [
 		},
 		techsList: [
 			"React",
-			"Styled Components",
-			"TypeScript",
 			"Yarn",
+			"TypeScript",
+			"Styled Components",
 			"React Responsive",
 		],
 	},
@@ -59,8 +59,8 @@ export const data = [
 		techsList: [
 			"JavaScript",
 			"React",
-			"Styled Components",
 			"Yarn",
+			"Styled Components",
 			"React Responsive",
 		],
 	},
@@ -79,12 +79,12 @@ export const data = [
 		},
 		techsList: [
 			"JavaScript",
-			"React Native",
 			"Expo",
 			"Yarn",
+			"Figma",
+			"React Native",
 			"RN-Gesture-Handler",
 			"RN-Reanimated",
-			"Figma",
 		],
 	},
 	{
@@ -124,7 +124,7 @@ export const data = [
 				url: "https://optimustech-alura.netlify.app/",
 			},
 		},
-		techsList: ["HTML", "CSS", "Sass"],
+		techsList: ["HTML", "Sass"],
 	},
 	{
 		id: 7,
@@ -154,7 +154,7 @@ export const data = [
 				url: "https://github.com/CauaRodrigues/your-link.git",
 			},
 		},
-		techsList: ["Python", "bitlyshortener", "pip"],
+		techsList: ["Python", "bitlyshortener", "pip", "requests"],
 	},
 	{
 		id: 9,
