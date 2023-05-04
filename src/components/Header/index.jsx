@@ -27,7 +27,7 @@ export default function Header() {
 							</S.NavLink>
 
 							<S.NavLink active={pathname === "/projects"}>
-								<Link to="/projects">Projects</Link>
+								<Link to="/projects">Projetos</Link>
 							</S.NavLink>
 
 							<S.NavLink active={pathname === "/setup"}>
