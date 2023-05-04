@@ -48,7 +48,7 @@ export const ProjectsTitle = styled.div`
 `;
 
 export const ProjectsSection = styled.section`
-	max-width: 85%;
+	max-width: 80%;
 	margin-top: 1rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -57,9 +57,11 @@ export const ProjectsSection = styled.section`
 
 	@media (max-width: 1150px) {
 		grid-template-columns: repeat(2, 1fr);
+		max-width: 85%;
 	}
 
 	@media (max-width: 740px) {
 		grid-template-columns: repeat(1, 1fr);
+		max-width: 90%;
 	}
 `;

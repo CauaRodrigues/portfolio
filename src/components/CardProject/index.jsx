@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "styled-components";
 import { useMediaQuery } from "react-responsive";
 
-import { AiOutlineFolder, AiOutlineAndroid } from "react-icons/ai";
+import { AiOutlineFolder, AiFillAndroid } from "react-icons/ai";
 import { BsGithub, BsTerminal } from "react-icons/bs";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
@@ -23,8 +23,18 @@ export default function CardProject({ name, description, links, techsList }) {
 						<BsGithub size={36} />
 					</a>
 
-					<a href="#" target="_blank" rel="noopener noreferrer">
-						<HiOutlineExternalLink size={36} />
+					<a
+						href={links.projectUrl.url}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{links.projectUrl.mobile ? (
+							<AiFillAndroid size={36} />
+						) : links.projectUrl.cli ? (
+							<BsTerminal size={36} />
+						) : (
+							<HiOutlineExternalLink size={36} />
+						)}
 					</a>
 				</S.TopIconsLink>
 			</S.TopProject>
