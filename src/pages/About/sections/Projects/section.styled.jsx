@@ -145,4 +145,13 @@ export const Technologies = styled.div`
 export const GroupLink = styled.div`
 	display: flex;
 	gap: 1rem;
+
+	a {
+		color: ${({ theme }) => theme.colors.light};
+		transition: color 0.45s;
+
+		&:hover {
+			color: ${({ theme }) => theme.colors.primary};
+		}
+	}
 `;

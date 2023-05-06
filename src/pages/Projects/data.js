@@ -3,7 +3,7 @@ export const data = [
 		id: 1,
 		name: "Pickles Search",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipiscing elit semper, est per ridiculus ut pretium et.",
+			"Site de busca de personagens, episódios e localizações que fazem parte da série Rick And Morty. Permite aos usuários saberem mais sobre os personagens da série.",
 		links: {
 			github: "https://github.com/CauaRodrigues/rick-and-morty-search",
 			projectUrl: {
@@ -26,7 +26,7 @@ export const data = [
 		id: 2,
 		name: "Space Tourism",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipiscing elit semper, est per ridiculus ut pretium et.",
+			"Site fictício que simula uma página de turismo espacial. É aprensentado os possíveis destinos, sua equipe e as tecnologias utilizadas para fazer a viagem acontecer.",
 		links: {
 			github: "https://github.com/CauaRodrigues/space-tourism",
 			projectUrl: {
@@ -47,7 +47,7 @@ export const data = [
 		id: 3,
 		name: "Thin Cut",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipiscing elit semper, est per ridiculus ut pretium et.",
+			"Landing page que apresenta uma barbearia fictícia por completo. Demonstrando os serviços realizados pela barbearia, galeria de fotos do local e outras informações gerais da barbearia.",
 		links: {
 			github: "https://github.com/CauaRodrigues/thin-cut",
 			projectUrl: {
@@ -165,7 +165,7 @@ export const data = [
 			github: "https://github.com/CauaRodrigues/test-gudi",
 			projectUrl: {
 				mobile: false,
-				cli: true,
+				cli: false,
 				url: "https://gudi-fawn.vercel.app/",
 			},
 		},

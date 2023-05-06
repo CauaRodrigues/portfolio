@@ -30,6 +30,7 @@ export default function Setup() {
 										<p>{item.description}</p>
 
 										<a
+											className="details"
 											href={item.link}
 											target="_blank"
 											rel="noopener noreferrer"
@@ -54,6 +55,7 @@ export default function Setup() {
 										<p>{item.description}</p>
 
 										<a
+											className="details"
 											href={item.link}
 											target="_blank"
 											rel="noopener noreferrer"

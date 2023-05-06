@@ -1,6 +1,7 @@
 const colors = {
 	name: "dark",
 	main: "#08070C",
+	primary_light: "#7966b4",
 	primary: "#6550A3",
 	primary_dark: "#281953",
 	text: "#ffffff",
@@ -10,6 +11,7 @@ const colors = {
 	gray: "#8f9ba8",
 	gray_dark: "#909294",
 	blur: "rgba(114, 92, 177, .14)",
+	hover_link: "rgba(109, 77, 199, 0.288)",
 };
 
 const fonts = {

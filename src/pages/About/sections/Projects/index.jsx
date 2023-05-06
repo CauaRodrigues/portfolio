@@ -46,11 +46,11 @@ export default function Projects() {
 								href="https://github.com/CauaRodrigues/rick-and-morty-search"
 								target="_blank"
 							>
-								<BsGithub size={26} color={colors.light} />
+								<BsGithub size={26} />
 							</a>
 
 							<a href="https://pickles-search.vercel.app/" target="_blank">
-								<TbExternalLink size={30} color={colors.light} />
+								<TbExternalLink size={30} />
 							</a>
 						</S.GroupLink>
 					</S.InfosProject>
@@ -87,11 +87,11 @@ export default function Projects() {
 								href="https://github.com/CauaRodrigues/space-tourism"
 								target="_blank"
 							>
-								<BsGithub size={26} color={colors.light} />
+								<BsGithub size={26} />
 							</a>
 
 							<a href="https://space-tourism-aka.vercel.app/" target="_blank">
-								<TbExternalLink size={30} color={colors.light} />
+								<TbExternalLink size={30} />
 							</a>
 						</S.GroupLink>
 					</S.InfosProject>
@@ -128,21 +128,21 @@ export default function Projects() {
 								href="https://github.com/CauaRodrigues/thin-cut"
 								target="_blank"
 							>
-								<BsGithub size={26} color={colors.light} />
+								<BsGithub size={26} />
 							</a>
 
 							<a
 								href="https://github.com/CauaRodrigues/thin-cut"
 								target="_blank"
 							>
-								<TbExternalLink size={30} color={colors.light} />
+								<TbExternalLink size={30} />
 							</a>
 						</S.GroupLink>
 					</S.InfosProject>
 				</S.Project>
 
 				<Link to="/projects">
-					<StyledButton bgColor={colors.primary} color={colors.light}>
+					<StyledButton bgColor={colors.primary}>
 						Ver Mais Projetos
 					</StyledButton>
 				</Link>

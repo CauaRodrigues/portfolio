@@ -33,10 +33,6 @@ export default function Header() {
 							<S.NavLink active={pathname === "/setup"}>
 								<Link to="/setup">Setup</Link>
 							</S.NavLink>
-
-							<S.NavLink active={pathname === "/events"}>
-								<Link to="/events">Eventos</Link>
-							</S.NavLink>
 						</ul>
 					</S.Menu>
 				</MediaQuery>
@@ -62,10 +58,6 @@ export default function Header() {
 
 					<S.NavLink active={pathname === "/setup"}>
 						<Link to="/setup">Setup</Link>
-					</S.NavLink>
-
-					<S.NavLink active={pathname === "/events"}>
-						<Link to="/events">Eventos</Link>
 					</S.NavLink>
 				</S.MenuMobile>
 			</MediaQuery>

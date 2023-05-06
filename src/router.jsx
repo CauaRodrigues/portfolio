@@ -7,7 +7,6 @@ import Home from "@pages/Home";
 import About from "@pages/About";
 import Projects from "@pages/Projects";
 import Setup from "@pages/Setup";
-import Events from "@pages/Events";
 
 const Router = createBrowserRouter([
 	{
@@ -30,10 +29,6 @@ const Router = createBrowserRouter([
 			{
 				path: "/setup",
 				element: <Setup />,
-			},
-			{
-				path: "/events",
-				element: <Events />,
 			},
 		],
 	},
