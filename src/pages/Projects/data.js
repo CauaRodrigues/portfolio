@@ -68,7 +68,7 @@ export const data = [
 		id: 4,
 		name: "Tally Counter App",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipiscing elit semper, est per ridiculus ut pretium et.",
+			"Tally Counter App consiste em um aplicativo de contagem simples e minimalista, apenas com as funções necessárias para que o usuário não fique perdido e consiga usar o aplicativo sem problemas.",
 		links: {
 			github: "https://github.com/CauaRodrigues/tally-counter-app",
 			projectUrl: {
@@ -91,7 +91,7 @@ export const data = [
 		id: 5,
 		name: "Homepage Blog",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipiscing elit semper, est per ridiculus ut pretium et.",
+			"Página inicial de um blog. Outro página feita apenas para fins ditáticos, com foco em conceitos do ecossistema do React, como componentização, props, hooks, classes e async/await.",
 		links: {
 			github: "https://github.com/CauaRodrigues/homepage-blog",
 			projectUrl: {
@@ -115,7 +115,7 @@ export const data = [
 		id: 6,
 		name: "OptimusTech",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipiscing elit semper, est per ridiculus ut pretium et.",
+			"Landing Page responsiva que aprensenta uma plataforma, OptimusTech, para procurar empregos focados para desenvolvedores e designers. Desafio proposto pela <a href='https://7daysofcode.io/' target='_blank' rel='noopener noreferrer'>7 Days Of Code</a>",
 		links: {
 			github: "https://github.com/CauaRodrigues/optimus-tech",
 			projectUrl: {
@@ -130,7 +130,7 @@ export const data = [
 		id: 7,
 		name: "AdvicesApp",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipiscing elit semper, est per ridiculus ut pretium et.",
+			"Gerador de conselhos e frases através da API <a href='https://api.adviceslip.com/' target='_blank' rel='noopener noreferrer'>Advice Slip</a>. Além da funcionalidade de gerar frases é possível realizar buscas de frases e copiar a frase para a área de transferência. Essa aplicação é o resultado de um desafio da plataforma <a href='https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db' target='_blank' rel='noopener noreferrer'>Frontend Mentor</a>.",
 		links: {
 			github: "https://github.com/CauaRodrigues/AdvicesApp",
 			projectUrl: {
@@ -145,7 +145,7 @@ export const data = [
 		id: 8,
 		name: "Your Link",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipiscing elit semper, est per ridiculus ut pretium et.",
+			"Encurtador de url CLI. Este script em python utiliza as APIs da <a href='https://bitly.com/' target='_blank' rel='noopener noreferrer'>Bitly</a> e <a href='https://cutt.ly/' target='_blank' rel='noopener noreferrer'>Cuttly</a> para gerar links encurtados. É possível escolher com qual API você deseja encurtar o link inserido e quantos links você deseja encurtar, sem precisar finalizar o script para encurtar outro link.",
 		links: {
 			github: "https://github.com/CauaRodrigues/your-link",
 			projectUrl: {
@@ -160,7 +160,7 @@ export const data = [
 		id: 9,
 		name: "Gudi",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipiscing elit semper, est per ridiculus ut pretium et.",
+			"Landing Page de uma agência de viagens fictícia. É uma página estática, ou seja, foi feita para fins didáticos com foco apenas na apresentação do produto e serviço. É um site responsivo, com acessibilidade presente e utiliza técnicas de SEO",
 		links: {
 			github: "https://github.com/CauaRodrigues/test-gudi",
 			projectUrl: {

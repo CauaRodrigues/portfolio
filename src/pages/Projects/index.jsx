@@ -5,7 +5,6 @@ import CardProject from "@components/CardProject";
 import { data } from "./data";
 
 export default function Projects() {
-	console.log(data);
 	return (
 		<S.ProjectsContainer>
 			<S.ProjectsTitle>

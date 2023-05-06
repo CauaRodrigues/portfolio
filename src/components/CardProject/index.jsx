@@ -1,6 +1,5 @@
 import React from "react";
 import { useTheme } from "styled-components";
-import { useMediaQuery } from "react-responsive";
 
 import { AiOutlineFolder, AiFillAndroid } from "react-icons/ai";
 import { BsGithub, BsTerminal } from "react-icons/bs";
@@ -11,16 +10,14 @@ import * as S from "./cardProject.styled";
 export default function CardProject({ name, description, links, techsList }) {
 	const { colors } = useTheme();
 
-	const isMobile = useMediaQuery({ query: "(max-width: 520px)" });
-
 	return (
 		<S.BoxProject>
 			<S.TopProject>
-				<AiOutlineFolder size={isMobile ? 52 : 64} color={colors.light} />
+				<AiOutlineFolder size={48} color={colors.light} />
 
 				<S.TopIconsLink>
 					<a href={links.github} target="_blank" rel="noopener noreferrer">
-						<BsGithub size={36} />
+						<BsGithub size={32} />
 					</a>
 
 					<a
@@ -29,11 +26,11 @@ export default function CardProject({ name, description, links, techsList }) {
 						rel="noopener noreferrer"
 					>
 						{links.projectUrl.mobile ? (
-							<AiFillAndroid size={36} />
+							<AiFillAndroid size={32} />
 						) : links.projectUrl.cli ? (
-							<BsTerminal size={36} />
+							<BsTerminal size={32} />
 						) : (
-							<HiOutlineExternalLink size={36} />
+							<HiOutlineExternalLink size={32} />
 						)}
 					</a>
 				</S.TopIconsLink>
@@ -42,7 +39,7 @@ export default function CardProject({ name, description, links, techsList }) {
 			<S.BoxAboutProject>
 				<h3>{name}</h3>
 
-				<p>{description}</p>
+				<p dangerouslySetInnerHTML={{ __html: description }} />
 			</S.BoxAboutProject>
 
 			<S.ListTechs>

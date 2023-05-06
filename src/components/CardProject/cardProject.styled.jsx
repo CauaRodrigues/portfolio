@@ -9,7 +9,8 @@ export const BoxProject = styled.div`
 	justify-content: space-between;
 	gap: 0.7rem;
 
-	background-color: ${({ theme }) => theme.colors.black_light};
+	background-color: transparent;
+	border: 1.5px solid rgba(255, 255, 255, 0.19);
 	border-radius: 14px;
 `;
 
@@ -38,17 +39,26 @@ export const TopIconsLink = styled.div`
 
 export const BoxAboutProject = styled.div`
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
 
 	h3 {
-		font-size: min(1.8rem, 8vw);
+		font-size: min(1.5rem, 8vw);
 		font-weight: ${({ theme }) => theme.fonts.fw.bd};
 		text-transform: capitalize;
 		margin-bottom: 5px;
 	}
 
 	p {
-		font-size: min(1.1rem, 5vw);
+		font-size: min(1rem, 5vw);
 		font-weight: ${({ theme }) => theme.fonts.fw.md};
+		color: ${({ theme }) => theme.colors.gray};
+
+		a {
+			color: ${({ theme }) => theme.colors.light};
+			text-decoration: underline;
+		}
 	}
 `;
 
@@ -61,13 +71,13 @@ export const ListTechs = styled.ul`
 `;
 
 export const Tech = styled.li`
-	padding: 5px 12px;
+	padding: 5px 8px;
 
 	border: 2.5px solid ${({ theme }) => theme.colors.gray};
 	border-radius: 7px;
 
 	text-transform: capitalize;
 	color: ${({ theme }) => theme.colors.light};
-	font-size: min(1rem, 6vw);
+	font-size: min(0.9rem, 6vw);
 	font-weight: ${({ theme }) => theme.fonts.fw.sb};
 `;
