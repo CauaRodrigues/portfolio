@@ -131,10 +131,7 @@ export default function Projects() {
 								<BsGithub size={26} />
 							</a>
 
-							<a
-								href="https://github.com/CauaRodrigues/thin-cut"
-								target="_blank"
-							>
+							<a href="https://thin-cut.vercel.app/" target="_blank">
 								<TbExternalLink size={30} />
 							</a>
 						</S.GroupLink>

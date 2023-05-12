@@ -53,7 +53,7 @@ export const data = [
 			projectUrl: {
 				mobile: false,
 				cli: false,
-				url: "",
+				url: "https://thin-cut.vercel.app/",
 			},
 		},
 		techsList: [

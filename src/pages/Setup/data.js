@@ -4,43 +4,29 @@ export const data = {
 			id: 1,
 			name: "Visual Studio Code",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
+				"Oferece suporte para qualquer linguagem e permite criar snippets de código personalizados. Além disso, existem temas para todos os gostos, sincronização com a nuvem, terminal integrado e uma comunidade enorme.",
 			link: "https://code.visualstudio.com/",
 		},
 		{
 			id: 2,
 			name: "Vim",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
+				"Utilizo-o para tarefas mais rápidas e principalmente para programar em Python, devido à sua rapidez e não precisar de muitos plugins. Além disso, gosto de configurar e personalizar o vim, tornando-o ainda mais produtivo e eficiente.",
 			link: "https://github.com/vim/vim",
-		},
-		{
-			id: 3,
-			name: "Postman",
-			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
-			link: "https://www.postman.com/",
 		},
 		{
 			id: 4,
 			name: "Kitty",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
+				"Uns dos terminais mais rápidos que eu já usei. Além de ser rápido ele é muito simples e minimalista. E o melhor é que a interface e configurações do terminal fica por conta do usuário, ou seja, você pode deixar o terminal com a sua cara.",
 			link: "https://sw.kovidgoyal.net/kitty/",
 		},
 		{
 			id: 5,
 			name: "Fish Shell",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
+				"Suporta funcionalidades poderosas como highlight, sugestões inteligentes e auto-complete, e o melhor: você não precisa configurar nada e nem baixar plugins, já vem tudo por padrão.",
 			link: "https://fishshell.com/",
-		},
-		{
-			id: 6,
-			name: "Figma",
-			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
-			link: "https://www.figma.com/",
 		},
 	],
 	productivity: [

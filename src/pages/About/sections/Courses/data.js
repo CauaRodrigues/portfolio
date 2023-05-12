@@ -15,15 +15,6 @@ export const data = [
 		url: "https://vainaweb.com.br/",
 		year: "2022-2023",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur tellus, ridiculus sociosqu habitasse mauris pulvinar curae himenaeos suspendisse congue quam, libero vitae sodales eu cras nascetur antea. Magnis inceptos consequat est dignissim nec vulputate nisl facilisi interdum faucibus hendrerit purus viverra mollis turpis urna nibh vivamus id sapien commodo.",
-	},
-	{
-		id: 3,
-		name: "Web Moderno JavaScript",
-		institute: "udemy / cod3r",
-		url: "https://www.udemy.com/course/curso-web/",
-		year: "2022-2023",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur tellus, ridiculus sociosqu habitasse mauris pulvinar curae himenaeos suspendisse congue quam, libero vitae sodales eu cras nascetur antea. Magnis inceptos consequat est dignissim nec vulputate nisl facilisi interdum faucibus hendrerit purus viverra mollis turpis urna nibh vivamus id sapien commodo.",
+			"Este curso de Front-end é um dos melhores que já vi, de longe. Mesmo sendo totalmente gratuito, a qualidade e o suporte fornecidos pelo Vai na Web aos alunos é impressionante. No Vai na Web, não se aprende apenas habilidades técnicas, mas também se adquire soft skills importantes para a carreira profissional, tornando-se um bom desenvolvedor. O grande diferencial do Vai na Web é que eles convidam profissionais da área de TI que já atuam no mercado para compartilhar suas histórias e trajetórias profissionais com os alunos, mostrando como é o dia a dia de trabalho.",
 	},
 ];
