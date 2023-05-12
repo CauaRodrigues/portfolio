@@ -15,14 +15,14 @@ export const data = {
 			link: "https://github.com/vim/vim",
 		},
 		{
-			id: 4,
+			id: 3,
 			name: "Kitty",
 			description:
 				"Uns dos terminais mais rápidos que eu já usei. Além de ser rápido ele é muito simples e minimalista. E o melhor é que a interface e configurações do terminal fica por conta do usuário, ou seja, você pode deixar o terminal com a sua cara.",
 			link: "https://sw.kovidgoyal.net/kitty/",
 		},
 		{
-			id: 5,
+			id: 4,
 			name: "Fish Shell",
 			description:
 				"Suporta funcionalidades poderosas como highlight, sugestões inteligentes e auto-complete, e o melhor: você não precisa configurar nada e nem baixar plugins, já vem tudo por padrão.",
@@ -34,57 +34,36 @@ export const data = {
 			id: 1,
 			name: "Todoist",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
+				"O Todoist é uma ferramenta para organização e gereciar tarefas. Ele oferece muitas funcionalidades úteis e ainda gera relatórios de sua produtividade e progresso.",
 			link: "https://todoist.com/app/",
 		},
 		{
 			id: 2,
-			name: "Notion",
-			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
-			link: "https://www.notion.so/pt-br/product",
-		},
-		{
-			id: 3,
-			name: "Obsidian",
-			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
-			link: "https://obsidian.md/",
-		},
-		{
-			id: 4,
 			name: "GitMind",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
+				"Se você gosta de estudar ou planejar seus projetos por meio de mapas mentais assim como eu, você vai gostar muito do GitMind. Existe muitos templates para diferentes tipos de mapas, muitas opções de estilos e atalhos de teclado para aumentar a produtividade.",
 			link: "https://gitmind.com/",
 		},
 		{
-			id: 5,
+			id: 3,
 			name: "Awesome Screenshot",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
+				"Uma extensão do navegador que permite você gravar, tirar print da tela inteira ou selecionar uma parte específica janela, editar esses prints, e ainda você pode salvar essas imagens na própria cloud deles.",
 			link: "https://www.awesomescreenshot.com/",
 		},
 		{
-			id: 6,
+			id: 4,
 			name: "Mobile First",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
+				"Uma extensão que não pode faltar para quem é front-end. Você pode ver e interagir com sua aplicação tendo a mesma visão de usuários mobile, tablets e outros dispositivos, até mesmo Apple Watch.",
 			link: "https://www.webmobilefirst.com/en/",
 		},
 		{
-			id: 7,
+			id: 5,
 			name: "Wappalyzer",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
+				"Você já entrou em uma aplicação web e ficou curioso com quais tecnologias foram utilizadas para desenvolvê-la? Wappalyzer serve exatamente para isso, ele mostra as tecnologias que foram usadas naquela aplicação.",
 			link: "https://www.wappalyzer.com/",
-		},
-		{
-			id: 8,
-			name: "JSON Viewer",
-			description:
-				"Lorem ipsum dolor sit amet consectetur adipiscing elit ac, nisl elementum vitae integer dictumst cum ligula est pharetra, enim posuere ornare netus purus lacinia ullamcorper.",
-			link: "https://github.com/tulios/json-viewer",
 		},
 	],
 };
