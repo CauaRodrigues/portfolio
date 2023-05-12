@@ -10,7 +10,6 @@ export default function Root() {
 	return (
 		<ThemeProvider theme={{ colors, fonts }}>
 			<GlobalStyles />
-
 			<RouterProvider router={Router} />
 		</ThemeProvider>
 	);

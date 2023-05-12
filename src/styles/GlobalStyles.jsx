@@ -13,7 +13,8 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${({ theme }) => theme.fonts.fm.quicksand};
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    text-decoration: none;
+    text-decoration: none; 
+    scroll-behavior: smooth;
   }
   
   body,
