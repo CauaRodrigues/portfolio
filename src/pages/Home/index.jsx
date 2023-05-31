@@ -21,7 +21,7 @@ export default function Home() {
 
 				<S.GroupButtons>
 					<a
-						href="https://drive.google.com/file/d/1qEy4-NN13YhEoKtGoaGLZGQ35q1kH6A7/view?usp=sharing"
+						href="https://docs.google.com/document/d/1lSTEfbsWZ2BMhNtSP1ZX23Lk8vVsVwjJk9mYRHwoE9E/edit?usp=sharing"
 						target="_blank"
 						referrerPolicy="no-referrer"
 					>

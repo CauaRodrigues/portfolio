@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useTheme } from "styled-components";
+import emailjs from "@emailjs/browser";
+
 import { MdEmail } from "react-icons/md";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { SiFrontendmentor, SiCodewars } from "react-icons/si";
+
 import { StyledButton } from "@styled/components/Button";
 import * as S from "./contact.styled";
-import { useTheme } from "styled-components";
 
 export default function Contact() {
 	const { colors } = useTheme();
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+		console.log(form);
+		// emailjs
+		// 	.sendForm(
+		// 		"default_service",
+		// 		"contact_form",
+		// 		form.current,
+		// 		import.meta.env.VITE_APP_PUBLIC_KEY
+		// 	)
+		// 	.then(console.log)
+		// 	.catch(console.log);
+		form.current.forEach((input) => (input.value = ""));
+	};
 
 	return (
 		<S.ContactSection>
@@ -19,17 +38,17 @@ export default function Contact() {
 				</p>
 			</S.ContactTitle>
 
-			<S.Form>
+			<S.Form ref={form} onSubmit={sendEmail}>
 				<div className="form__group-fields">
 					<S.FormGroup>
 						<S.FormField
 							type="text"
-							name="name"
-							id="name"
+							name="from_name"
+							id="from_name"
 							autoComplete="off"
 							required
 						/>
-						<S.FormLabel className="form__label" htmlFor="name">
+						<S.FormLabel className="form__label" htmlFor="from_name">
 							Nome
 						</S.FormLabel>
 					</S.FormGroup>
@@ -37,12 +56,12 @@ export default function Contact() {
 					<S.FormGroup>
 						<S.FormField
 							type="email"
-							name="email"
-							id="email"
+							name="reply_to"
+							id="reply_to"
 							autoComplete="off"
 							required
 						/>
-						<S.FormLabel className="form__label" htmlFor="email">
+						<S.FormLabel className="form__label" htmlFor="reply_to">
 							E-mail
 						</S.FormLabel>
 					</S.FormGroup>
@@ -64,7 +83,7 @@ export default function Contact() {
 					bgColor={colors.main}
 					color={colors.light}
 					width={145}
-					onClick={() => console.log("Email enviado")}
+					type="submit"
 				>
 					Enviar
 				</StyledButton>
@@ -91,7 +110,8 @@ export default function Contact() {
 					</a>
 
 					<a
-						href="mailto:assis.developer@gmail.com"
+						// href="mailto:assis.developer@gmail.com"
+						href="mailto:assis.developer@gmail.com?subject=Portifolio: Mensagem de ${name}&body=${message}"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
