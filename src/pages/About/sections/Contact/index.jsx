@@ -44,7 +44,7 @@ export default function Contact() {
 				"default_service",
 				"contact_form",
 				ContactDetails,
-				import.meta.env.VITE_APP_PUBLIC_KEY
+				import.meta.env.VITE_APP_API_KEY
 			)
 			.then(console.log, console.log);
 
