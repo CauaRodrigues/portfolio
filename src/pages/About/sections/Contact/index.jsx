@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import { useTheme } from "styled-components";
 import emailjs from "@emailjs/browser";
 
@@ -9,23 +9,48 @@ import { SiFrontendmentor, SiCodewars } from "react-icons/si";
 import { StyledButton } from "@styled/components/Button";
 import * as S from "./contact.styled";
 
+class TemplateParams {
+	constructor(name, email, message) {
+		this.from_name = name;
+		this.reply_to = email;
+		this.message = message;
+	}
+
+	get params() {
+		return {
+			from_name: this.from_name,
+			reply_to: this.reply_to,
+			message: this.message,
+		};
+	}
+}
+
 export default function Contact() {
+	const [contactName, setContactName] = useState("");
+	const [contactEmail, setContactEmail] = useState("");
+	const [contactMessage, setContactMessage] = useState("");
 	const { colors } = useTheme();
-	const form = useRef();
 
 	const sendEmail = (e) => {
 		e.preventDefault();
-		console.log(form);
-		// emailjs
-		// 	.sendForm(
-		// 		"default_service",
-		// 		"contact_form",
-		// 		form.current,
-		// 		import.meta.env.VITE_APP_PUBLIC_KEY
-		// 	)
-		// 	.then(console.log)
-		// 	.catch(console.log);
-		form.current.forEach((input) => (input.value = ""));
+		const ContactDetails = new TemplateParams(
+			contactName,
+			contactEmail,
+			contactMessage
+		).params;
+
+		emailjs
+			.send(
+				"default_service",
+				"contact_form",
+				ContactDetails,
+				import.meta.env.VITE_APP_PUBLIC_KEY
+			)
+			.then(console.log, console.log);
+
+		setContactName("");
+		setContactEmail("");
+		setContactMessage("");
 	};
 
 	return (
@@ -38,13 +63,15 @@ export default function Contact() {
 				</p>
 			</S.ContactTitle>
 
-			<S.Form ref={form} onSubmit={sendEmail}>
+			<S.Form onSubmit={sendEmail}>
 				<div className="form__group-fields">
 					<S.FormGroup>
 						<S.FormField
 							type="text"
 							name="from_name"
 							id="from_name"
+							value={contactName}
+							onChange={(e) => setContactName(e.target.value)}
 							autoComplete="off"
 							required
 						/>
@@ -58,6 +85,8 @@ export default function Contact() {
 							type="email"
 							name="reply_to"
 							id="reply_to"
+							value={contactEmail}
+							onChange={(e) => setContactEmail(e.target.value)}
 							autoComplete="off"
 							required
 						/>
@@ -72,6 +101,8 @@ export default function Contact() {
 						as="textarea"
 						name="message"
 						id="message"
+						value={contactMessage}
+						onChange={(e) => setContactMessage(e.target.value)}
 						required
 					></S.FormMessage>
 					<S.FormLabel className="form__label" htmlFor="email">
