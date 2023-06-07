@@ -73,4 +73,9 @@ export const Button = styled.button`
 	background-color: transparent;
 	color: ${({ theme }) => theme.colors.text};
 	cursor: pointer;
+	transition: all 0.5s;
+
+	&:hover {
+		color: ${({ theme }) => theme.colors.primary};
+	}
 `;

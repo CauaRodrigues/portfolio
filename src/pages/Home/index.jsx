@@ -1,8 +1,8 @@
 import React from "react";
 import { useTheme } from "styled-components";
+import { Link } from "react-router-dom";
 
 import * as S from "./page.styled";
-import { Link } from "react-router-dom";
 import { StyledButton } from "@styled/components/Button";
 
 export default function Home() {

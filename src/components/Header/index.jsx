@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useMatches } from "react-router-dom";
 import MediaQuery from "react-responsive";
 import { BsSearch } from "react-icons/bs";
 
 import Logo from "@styled/components/Logo";
+import Modal from "@components/Modal";
 
 import * as S from "./header.styled";
 
 export default function Header() {
 	const [, { pathname }] = useMatches();
+	const [openModal, setOpenModal] = useState(false);
+
+	const onChangeModal = (status) => {
+		setOpenModal(status);
+	};
 
 	return (
 		<>
@@ -37,7 +43,7 @@ export default function Header() {
 					</S.Menu>
 				</MediaQuery>
 
-				<S.Button>
+				<S.Button onClick={() => setOpenModal((prevState) => !prevState)}>
 					<BsSearch size={22} />
 				</S.Button>
 			</S.Header>
@@ -61,6 +67,10 @@ export default function Header() {
 					</S.NavLink>
 				</S.MenuMobile>
 			</MediaQuery>
+
+			{openModal ? (
+				<Modal isOpen={openModal} handlerModal={onChangeModal} />
+			) : null}
 		</>
 	);
 }

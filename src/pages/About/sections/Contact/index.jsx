@@ -56,7 +56,7 @@ export default function Contact() {
 	return (
 		<S.ContactSection>
 			<S.ContactTitle>
-				<h2>Entre em contato</h2>
+				<h2 id="contato">Entre em contato</h2>
 
 				<p>
 					Tem uma pergunta ou proposta, ou apenas deseja dizer oi? Vá em frente.
@@ -141,8 +141,7 @@ export default function Contact() {
 					</a>
 
 					<a
-						// href="mailto:assis.developer@gmail.com"
-						href="mailto:assis.developer@gmail.com?subject=Portifolio: Mensagem de ${name}&body=${message}"
+						href="mailto:assis.developer@gmail.com"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
